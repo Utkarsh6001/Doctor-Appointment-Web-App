@@ -1,0 +1,9 @@
+[build]
+  base = "frontend"
+  command = "chmod -R +x node_modules/.bin && npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
